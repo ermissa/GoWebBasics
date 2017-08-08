@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>GO APPLICATION</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="godbtmp.css">
+    <style>
+        header {
+            margin: 20px 0px 25px 0px;
+        }
+        
+        .margin {
+            margin: 0px auto!important;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container" style="margin:0px auto;">
+        <header>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <img class="col-md-2" src="https://camo.githubusercontent.com/3570dc511b9d7d8939776611259b67546f487ea0/68747470733a2f2f7261772e6769746875622e636f6d2f77696b692f676f2d73716c2d6472697665722f6d7973716c2f676f2d6d7973716c2d6472697665725f6d2e6a7067">
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+
+                <form action="/login" class="form-horizontal" method="post">
+                    <div class="form-group">
+                        <label for="usernamefor" class="col-sm-2 control-label">Username</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="usernamefor" placeholder="Email" name="username">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <div class="checkbox">
+                            <label>
+                            <input type="checkbox" name="checkbox"> Beni hatırla
+                          </label>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" name="submit_login">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="col-md-12"><p style="text-align: center;">{{.}}</p></div>
+        {{if eq .Name "cookie"}}<div class="row">LOGINSINIZ</div>{{end}}
+</div>
+
+
+
+
+</body>
+
+</html>
