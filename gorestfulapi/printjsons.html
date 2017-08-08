@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Restful Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container" style="margin:0px auto;">
+        <header>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <img class="col-md-2" src="https://camo.githubusercontent.com/3570dc511b9d7d8939776611259b67546f487ea0/68747470733a2f2f7261772e6769746875622e636f6d2f77696b692f676f2d73716c2d6472697665722f6d7973716c2f676f2d6d7973716c2d6472697665725f6d2e6a7067">
+            </div>
+        </header>
+
+        <div class="col-md-10">
+            {{range .}}
+            <div style="background-color:violet;margin:10px 10px 10px 10px;">
+                <h2>POST ID:{{.PostId}}<br>YAZAR ID: {{.PostYazarId}}<br>POST TITLE:{{.PostTitle}}</h2>
+            </div>
+            {{end}}
+        </div>
+
+    </div>
+</body>
+
+</html>
